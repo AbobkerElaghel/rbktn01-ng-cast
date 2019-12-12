@@ -3,7 +3,7 @@ angular.module('video-player').component('app', {
     this.videos = window.exampleVideoData;
     this.currentvideo = window.exampleVideoData[0];
     this.url = ("https://www.youtube.com/embed/").concat(this.currentvideo.id.videoId);
-    changeVideo = (video)=>{
+    this.changevideo = (video)=>{
       this.currentvideo = video;
       this.url = ("https://www.youtube.com/embed/").concat(this.currentvideo.id.videoId);
     }
